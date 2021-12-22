@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Rectangle.js"></script>
+</head>
+<body>
+<canvas id="myCanvas" width="1000px" height="600px">
+</canvas>
+<script>
+function createRectangle(){
+    let ctx = document.getElementById("myCanvas").getContext("2d");
+    let length = parseInt(prompt("Nhập chiều dài"));
+    let width = parseInt(prompt("Nhập chiều rộng"));
+    let rectangle = new Rectangle(length,width);
+    ctx.beginPath();
+    ctx.rect(100,200,rectangle.length,rectangle.width);
+    ctx.fill();
+
+    let area = length*width;
+    document.write("<br>"+" Diện tích hình chữ nhật là : " + area + "<br>");
+    let perimeter = (length+width)*2;
+    document.write(" Chu vi hình chữ nhật là : " + perimeter );
+}
+createRectangle();
+</script>
+
+</body>
+</html>
