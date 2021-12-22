@@ -18,9 +18,9 @@ function createRectangle(){
     ctx.rect(100,200,rectangle.length,rectangle.width);
     ctx.fill();
 
-    let area = length*width;
-    document.write("<br>"+" Diện tích hình chữ nhật là : " + area + "<br>");
-    let perimeter = (length+width)*2;
+    let area = rectangle.getArea;
+    document.write("<br>"+" Diện tích hình chữ nhật là : " + area );
+    let perimeter = rectangle.getPerimeter;
     document.write(" Chu vi hình chữ nhật là : " + perimeter );
 }
 createRectangle();
