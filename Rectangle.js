@@ -1,13 +1,9 @@
 class Rectangle {
     length;
     width;
-    area;
-    perimeter;
     constructor(length, width,area,perimeter) {
         this.length = length;
         this.width = width;
-        this.area = area;
-        this.perimeter = perimeter;
     }
 
     getLength() {
